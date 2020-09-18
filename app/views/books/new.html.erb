@@ -1,0 +1,20 @@
+<h3>Create a Book</h3>
+<%= form_with model: @book do |form| %>
+  <%= form.text_field :title, placeholder: "title" %>
+  <%= form.text_field :author, placeholder: "author" %>
+  <%= form.text_field :genre, placeholder: "genre" %>
+  <%= form.text_field :price, placeholder: "price" %>
+  <%= form.text_field :published_date, placeholder: "published_date" %>
+
+  <%= form.submit %>
+  <%= link_to 'Home', books_path%>
+<% end %>
+
+<!-- <%= form_for @book do |form| %>
+  <%= form.text_field :title, placeholder: "title" %>
+  <%= form.text_field :author, placeholder: "author" %>
+  <%= form.text_field :genre, placeholder: "genre" %>
+  <%= form.text_field :price, placeholder: "price" %>
+  <%= form.text_field :published_date, placeholder: "published_date" %>
+  <%= form.submit %>
+<% end %> -->
